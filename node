@@ -1,0 +1,17 @@
+// copyLeft (ButterC) all right has ben changed
+
+const cs50x = require('node:fs');
+
+const whatIsNodeAsync = () => {
+  return new Promise(resolve => {
+    setTimeout(() => resolve('Hello ,CS50x'), 500);
+  })
+}
+
+const whatNodeAwait = async () => {
+    console.log(await whatIsNodeAsync());
+}
+
+console.log('start');
+whatNodeAwait();
+console.log('end');
